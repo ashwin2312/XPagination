@@ -34,7 +34,7 @@ table {
     gap: 1rem;
     padding: 1rem;
   }
-  .btn-container button{
+  .btn-container button, span{
     border: none;
     padding: 0.5rem 1rem;
     background-color: #04AA6D;
