@@ -13,9 +13,10 @@ function App() {
       const response = await fetch(API);
       const data = await response.json();
       // console.log("data:: ", data);
-      setMembersData(...data);
+      setMembersData(data);
     } catch (error) {
       console.error(error);
+      console.log(error);
     }
   };
 
