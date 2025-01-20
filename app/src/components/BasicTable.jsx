@@ -28,8 +28,8 @@ export default function BasicTable({ MEMBERS_DATA }) {
     previousPage,
     canPreviousPage,
     canNextPage,
-    state:{pageIndex},
-    pageCount
+    state: { pageIndex },
+    pageCount,
   } = tableInstance;
 
   return (
@@ -67,7 +67,7 @@ export default function BasicTable({ MEMBERS_DATA }) {
         <button disabled={!canPreviousPage} onClick={previousPage}>
           Previous
         </button>
-        <span>{pageIndex+1}</span>
+        <span>{pageIndex + 1}</span>
         <button disabled={!canNextPage} onClick={nextPage}>
           Next
         </button>
