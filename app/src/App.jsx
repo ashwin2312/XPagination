@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <div>
-        <BasicTable />
+        <BasicTable members={membersData} />
       </div>
     </>
   );
