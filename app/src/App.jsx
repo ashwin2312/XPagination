@@ -9,10 +9,14 @@ function App() {
     "https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json";
 
   const getMembersData = async () => {
-    const response = await fetch(API);
-    const data = await response.json();
-    // console.log("data:: ", data);
-    setMembersData(data);
+    try {
+      const response = await fetch(API);
+      const data = await response.json();
+      // console.log("data:: ", data);
+      setMembersData(data);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
